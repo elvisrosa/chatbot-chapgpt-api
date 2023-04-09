@@ -1,3 +1,4 @@
 export const environment = {
-   apikey : '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'
+   apikey : 'xxxx9xxxxxxxx9xxxxxxxxxxx9xxxxx'
 }
+
