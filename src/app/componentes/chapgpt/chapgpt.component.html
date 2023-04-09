@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Aprendiendo a usar la API de Chapgpt</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-card *ngFor="let data of textList">
+    <ion-card-header>
+      <ion-input [(ngModel)]="data.text" label="?"></ion-input>
+      <ion-button (click)="enviarMensaje(data)">
+        Enviar
+      </ion-button>
+
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>{{data.response}}</p>
+    </ion-card-content>
+
+  </ion-card>
+
+
+</ion-content>
